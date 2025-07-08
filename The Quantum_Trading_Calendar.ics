@@ -1,0 +1,209 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuantumTrader//EnhancedWorkflow//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Quantum Ultra Trading Calendar
+X-WR-TIMEZONE:Asia/Riyadh
+X-WR-CALDESC:Crypto trading workflow with 7-phase system
+
+BEGIN:VTIMEZONE
+TZID:Asia/Riyadh
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0300
+TZNAME:AST
+END:STANDARD
+END:VTIMEZONE
+
+### PHASE 0: INFRASTRUCTURE SETUP (🟡) ###
+BEGIN:VEVENT
+UID:infra-001@quantumtrader
+SUMMARY:🟡 Phase 0: Infrastructure Setup
+DTSTART;TZID=Asia/Riyadh:20250707T080000
+DTEND;TZID=Asia/Riyadh:20250707T083000
+DESCRIPTION:Core Tasks:\n\n1. OPEN PLATFORMS:\n- TradingView: https://tradingview.com\n- 
+ CoinGlass: https://www.coinglass.com\n- Google Sheets\n\n2. NEWS SCAN:\n- CryptoPanic 
+ (Top 3 alerts): https://cryptopanic.com\n- Whale Alert: https://whale-alert.io\n\n3. 
+ SYSTEM CHECK:\n- Internet connection test\n- Exchange API status\n- Backup chart 
+ templates\n\n4. JOURNAL PREP:\n- Open Notion journal: https://notion.so\n- Previous 
+ session notes review
+RRULE:FREQ=WEEKLY;BYDAY=MON,TUE,WED,THU,FRI,SUN
+COLOR:yellow
+END:VEVENT
+
+### PHASE 1: FUNDAMENTAL FILTERS (🟡) ###
+BEGIN:VEVENT
+UID:fundamental-001@quantumtrader
+SUMMARY:🟡 Phase 1: Market Context & Filters
+DTSTART;TZID=Asia/Riyadh:20250707T083000
+DTEND;TZID=Asia/Riyadh:20250707T090000
+DESCRIPTION:Core Tasks:\n\n1. MACRO ANALYSIS:\n- BTC/ETH dominance: CoinGecko 
+ https://www.coingecko.com\n- USDT.D index: TradingView $USDT.D\n- Fear & Greed: 
+ https://alternative.me/crypto/fear-and-greed-index\n\n2. NARRATIVE SCAN:\n- Top 5 
+ sectors: Coingecko Categories https://www.coingecko.com/en/categories\n- LunarCrush 
+ social trends: https://lunarcrush.com\n\n3. EVENT FILTERS:\n- Token unlocks: 
+ https://tokenunlocks.app\n- Economic calendar: https://coinmarketcal.com\n- Critical 
+ news: CryptoPanic red alerts
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+COLOR:yellow
+END:VEVENT
+
+### PHASE 2: FLOW ANALYSIS (🟡) ###
+BEGIN:VEVENT
+UID:flow-001@quantumtrader
+SUMMARY:🟡 Phase 2: Sentiment & Flow Analysis
+DTSTART;TZID=Asia/Riyadh:20250707T090000
+DTEND;TZID=Asia/Riyadh:20250707T093000
+DESCRIPTION:Core Tasks:\n\n1. LIQUIDITY SCAN:\n- Heatmap walls: TensorCharts 
+ https://tensorcharts.com\n- Liquidation clusters: CoinGlass Liquidations Map\n\n2. 
+ SMART MONEY:\n- OI changes: CoinGlass OI Analysis\n- Funding rates: Coinalyze 
+ https://coinalyze.net\n\n3. VOLUME ANALYSIS:\n- ROVL >2x: AlphaNomics 
+ https://app.alphanomics.io\n- Volume spikes: DEXTools https://www.dextools.io\n\n4. 
+ BEHAVIORAL FLAGS:\n- Spoof detection: Heatmap + Time & Sales\n- Delta divergence: 
+ Coinalyze Futures Matrix
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+COLOR:yellow
+END:VEVENT
+
+### PHASE 3: COIN SELECTION (🟢) ###
+BEGIN:VEVENT
+UID:coinselect-001@quantumtrader
+SUMMARY:🟢 Phase 3: Coin Matrix Curation
+DTSTART;TZID=Asia/Riyadh:20250707T093000
+DTEND;TZID=Asia/Riyadh:20250707T103000
+DESCRIPTION:Core Tasks:\n\n1. LIQUIDITY SCREEN:\n- Min $20M 24h volume\n- Min $1M 
+ orderbook depth\n\n2. VOLATILITY FILTER:\n- RVOL >2.0 (AlphaNomics)\n- 4H ATR >3%\n\n3. 
+ FUNDAMENTAL SCORE:\n- Token unlocks: CryptoRank https://cryptorank.io\n- News impact: 
+ CryptoPanic sentiment score\n\n4. MATRIX BUILD:\n- Top 5 coins: Google Sheets template\n- 
+ Setup categorization: Scalp/Swing/Narrative\n\n5. EXCLUSION FILTERS:\n- Avoid unlock in 
+ next 72h\n- Negative funding >0.1%
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+COLOR:green
+END:VEVENT
+
+### PHASE 4: TECHNICAL SETUP (🔵) ###
+BEGIN:VEVENT
+UID:tech-001@quantumtrader
+SUMMARY:🔵 Phase 4: Technical & Structural Analysis
+DTSTART;TZID=Asia/Riyadh:20250707T103000
+DTEND;TZID=Asia/Riyadh:20250707T120000
+DESCRIPTION:Core Tasks:\n\n1. HTF STRUCTURE:\n- 4H/1D Market structure (BOS/CHoCH)\n- 
+ Weekly key levels\n\n2. VWAP CONFLUENCE:\n- Price relation to VWAP (5m/15m)\n- Volume 
+ profile: Coinalyze Volume Profile\n\n3. FVG ZONES:\n- 50% retracement zones\n- Liquidity 
+ pools: Above/below current price\n\n4. ORDER FLOW:\n- Liquidation clusters: CoinGlass 
+ Heatmap\n- Imbalance zones: 3-candle FVG\n\n5. ALERT SETUP:\n- Key FVG zones: TradingView 
+ alerts\n- Liquidity triggers: +2% from clusters
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+COLOR:blue
+END:VEVENT
+
+### PHASE 5: EXECUTION (🔴) ###
+BEGIN:VEVENT
+UID:execute-001@quantumtrader
+SUMMARY:🔴 Phase 5: Live Execution & Management
+DTSTART;TZID=Asia/Riyadh:20250707T120000
+DTEND;TZID=Asia/Riyadh:20250707T160000
+DESCRIPTION:Core Tasks:\n\n1. ENTRY CHECKLIST:\n- VWAP alignment (price > VWAP for longs)\n- 
+ Delta confirmation (buying pressure)\n- 5m FVG fill >50%\n\n2. POSITION SIZING:\n- Risk 
+ Calculator: https://leverage.trading\n- Max 2% per trade\n- Tiered entry scaling\n\n3. LIVE 
+ MONITORING:\n- Heatmap wall reactions (TensorCharts)\n- OI changes + price divergence\n- 
+ Liquidation cascade detection\n\n4. RISK ADJUSTMENT:\n- SL to breakeven at +1.5R\n- TP 
+ partial at 0.5R (25% position)\n- Trailing SL on 5m CHoCH\n\n5. JOURNAL LOG:\n- Entry/exit 
+ screenshots\n- Live commentary in Notion
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+COLOR:red
+END:VEVENT
+
+### PHASE 6: POST-TRADE (⚪) ###
+BEGIN:VEVENT
+UID:review-001@quantumtrader
+SUMMARY:⚪ Phase 6: Performance Analysis
+DTSTART;TZID=Asia/Riyadh:20250707T160000
+DTEND;TZID=Asia/Riyadh:20250707T170000
+DESCRIPTION:Core Tasks:\n\n1. PnL RECONCILIATION:\n- Trade journal update: Notion\n- 
+ Screenshot archive: TradesViz https://tradesviz.com\n\n2. KEY METRICS:\n- Win rate\n- 
+ Profit factor\n- Max drawdown\n\n3. SETUP REVIEW:\n- FVG hit rate\n- VWAP respect 
+ percentage\n- Liquidity trap identification\n\n4. 3 LESSONS:\n- Best setup\n- Worst 
+ mistake\n- Adjustment for tomorrow\n\n5. STRATEGY REFINEMENT:\n- Backtest 1 adjustment\n- 
+ Update Coin Matrix\n- Pre-market alert setup
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+COLOR:gray
+END:VEVENT
+
+### LATE SCALPING SESSIONS (Enhanced) ###
+BEGIN:VEVENT
+UID:scalp-001@quantumtrader
+SUMMARY:🔵 Late Scalp: Coin Selection
+DTSTART;TZID=Asia/Riyadh:20250708T180000
+DTEND;TZID=Asia/Riyadh:20250708T183000
+DESCRIPTION:Scalp-Specific Tasks:\n\n1. VOLUME SPIKES:\n- 1H RVOL >3x (AlphaNomics)\n- 
+ 15m volume >20MA\n\n2. LIQUIDITY SCAN:\n- Nearest liquidation clusters (CoinGlass)\n- 
+ Tight spread pairs (DEXTools)\n\n3. VWAP CONFLUENCE:\n- Price retesting VWAP\n- 5m 
+ consolidation <1%\n\n4. ORDER FLOW:\n- Absorption signals (Coinalyze)\n- Hidden delta 
+ divergence
+RRULE:FREQ=WEEKLY;BYDAY=TUE,THU,SUN
+COLOR:blue
+END:VEVENT
+
+BEGIN:VEVENT
+UID:scalp-002@quantumtrader
+SUMMARY:🔴 Late Scalp: Execution Protocol
+DTSTART;TZID=Asia/Riyadh:20250708T183000
+DTEND;TZID=Asia/Riyadh:20250708T203000
+DESCRIPTION:Execution Rules:\n\n1. ENTRY TRIGGERS:\n- 1m FVG fill with volume\n- VWAP 
+ reclaim with delta confirmation\n- Liquidity sweep reversal\n\n2. SCALP MANAGEMENT:\n- 
+ 1:1 RR minimum\n- 50% TP at +0.5R\n- SL at recent swing low/high\n\n3. SESSION CONTROLS:\n- 
+ Max 3 trades/session\n- Mandatory 15m break after 2 trades\n- Volume drop >40% = pause 
+ trading
+RRULE:FREQ=WEEKLY;BYDAY=TUE,THU,SUN
+COLOR:red
+END:VEVENT
+
+### SWING TRADE SETUPS (Monthly) ###
+BEGIN:VEVENT
+UID:swing-001@quantumtrader
+SUMMARY:🌙 Swing Setup: Structural Analysis
+DTSTART;TZID=Asia/Riyadh:20250718T100000
+DTEND;TZID=Asia/Riyadh:20250718T140000
+DESCRIPTION:Swing-Specific Tasks:\n\n1. HTF ZONES:\n- Weekly FVG identification\n- Monthly 
+ key levels\n- 0.382-0.618 retracement zones\n\n2. FUNDAMENTAL CONFIRMATION:\n- No unlocks 
+ in 2 weeks\n- Narrative score >8/10\n\n3. POSITION BUILDING:\n- 3-tier entry strategy\n- 
+ DCA calculator: https://dcabtc.com\n\n4. RISK PROTOCOL:\n- Volatility-adjusted position sizing\n- 
+ Correlation hedge (BTC/ETH pair)
+RRULE:FREQ=MONTHLY;BYDAY=3FR
+COLOR:purple
+END:VEVENT
+
+### NARRATIVE TRADE SETUPS (Monthly) ###
+BEGIN:VEVENT
+UID:narrative-001@quantumtrader
+SUMMARY:🚀 Narrative Setup: Event Analysis
+DTSTART;TZID=Asia/Riyadh:20250715T090000
+DTEND;TZID=Asia/Riyadh:20250715T110000
+DESCRIPTION:Event Trading Tasks:\n\n1. CATALYST SCAN:\n- CoinMarketCal: https://coinmarketcal.com\n- 
+ Protocol upgrades\n- Major partnership announcements\n\n2. SENTIMENT MEASUREMENT:\n- Social 
+ dominance: LunarCrush\n- Whale transaction tracker\n\n3. LOW-FLOAT ANALYSIS:\n- Circulating 
+ supply <40%\n- Exchange reserves trend\n\n4. ENTRY TIMING:\n- Pre-event accumulation zones\n- 
+ Post-dip entry strategy
+RRULE:FREQ=MONTHLY;BYDAY=3TU
+COLOR:orange
+END:VEVENT
+
+### EVALUATION DAY (Weekly) ###
+BEGIN:VEVENT
+UID:eval-001@quantumtrader
+SUMMARY:📊 Weekly Evaluation & Optimization
+DTSTART;TZID=Asia/Riyadh:20250712T080000
+DTEND;TZID=Asia/Riyadh:20250712T120000
+DESCRIPTION:Review Tasks:\n\n1. PERFORMANCE METRICS:\n- Win rate by setup type\n- Profitability 
+ by session time\n- Max adverse excursion analysis\n\n2. BACKTESTING:\n- Test 3 new entry triggers\n- 
+ VWAP respect statistics\n- FVG fill rate study\n\n3. TOOL OPTIMIZATION:\n- TradingView alert 
+ refinement\n- Coinalyze workspace setup\n- Notion journal templates\n\n4. EDUCATION:\n- Review 1 
+ advanced strategy\n- Market profile analysis tutorial
+RRULE:FREQ=WEEKLY;BYDAY=SAT
+COLOR:gray
+END:VEVENT
+
+END:VCALENDAR
